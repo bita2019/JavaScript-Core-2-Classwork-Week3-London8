@@ -23,15 +23,21 @@ Write JavaScript below that console.logs:
 
 */
 
-
 /*
 Task 2
 ======
 
 When a user clicks the 'ALERT' button, an alert box should pop up with the text "Thanks for visiting Bikes for Refugees!"
 */
+let donateBtn = document.querySelector("#donateBtn");
+donateBtn.addEventListener("click", () => {
+  alert("Thank you for donating");
+});
 
-
+let alerttext = document.querySelector("#alertBtn");
+alerttext.addEventListener("click", () => {
+  alert("Thanks for visiting Bikes for Refugees!");
+});
 /*
 Task 3
 =======
@@ -39,15 +45,17 @@ Task 3
 When a user clicks the 'Change colour' button, the background colour of the page should change to red.
 Hint: can you do this with a CSS class instead of adding styles to the element?
 */
-
-
+let backColor = document.querySelector("#bgrChangeBtn");
+backColor.addEventListener("click", () => {
+  let newQ = document.querySelector("body");
+  newQ.classList.add("background--red");
+});
 /*
 Task 4
 ======
 
 When a user clicks the 'Larger links!' button, the text of all links on the page should increase.
 */
-
 
 /*
 Task 5
